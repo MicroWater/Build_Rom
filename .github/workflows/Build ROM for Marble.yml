@@ -57,6 +57,4 @@ jobs:
           mkdir -p ~/.config/rclone/
           echo ${{ secrets.confbase64 }} > base64.txt
           base64 --decode base64.txt > ~/.config/rclone/rclone.conf
-          rclone delete e5:/刷机包/marble
-          rclone mkdir e5:/刷机包/marble
           rclone copy -P "$GITHUB_WORKSPACE"/zip/${{ env.rom_name }} e5:/刷机包/marble
