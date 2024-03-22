@@ -5,13 +5,13 @@ on:
       URL:
         description: "待移植包下载地址"
         required: true
-        default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.24.3.11.DEV/miui_SOCRATES_OS1.0.24.3.11.DEV_1d9ad73dc1_14.0.zip'
+        default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.24.3.18.DEV/miui_SOCRATES_OS1.0.24.3.18.DEV_e611830310_14.0.zip'
       CUSTOM_VERSION:
         description: "待打包版本号"
       VENDOR_URL:
         description: "底包下载地址"
         required: true
-        default: 'https://cdn-ota.azureedge.net/OS1.0.2.0.UMRCNXM/miui_MARBLE_OS1.0.2.0.UMRCNXM_65288a855a_14.0.zip'
+        default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.2.0.UMRCNXM/miui_MARBLE_OS1.0.2.0.UMRCNXM_65288a855a_14.0.zip'
       IMAGE_TYPE:
           description: "IMAGE 格式"
           required: true
