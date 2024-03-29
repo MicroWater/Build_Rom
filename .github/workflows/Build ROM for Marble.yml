@@ -5,7 +5,7 @@ on:
       URL:
         description: "待移植包下载地址"
         required: true
-        default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.15.0.UNKCNXM/miui_VERMEER_OS1.0.15.0.UNKCNXM_2100d3fc37_14.0.zip'
+        default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.13.0.UNMCNXM/miui_MANET_OS1.0.13.0.UNMCNXM_3eaea62808_14.0.zip'
       CUSTOM_VERSION:
         description: "待打包版本号"
       VENDOR_URL:
