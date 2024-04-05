@@ -39,6 +39,7 @@ jobs:
         uses: actions/checkout@main
         with:
           repository: MicroWater/Action_Build_Marble_Rom
+          ref: '发包版'
           token: ${{ secrets.PAT }}
       - name: 构建 ROM
         run: |
