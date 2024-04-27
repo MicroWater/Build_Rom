@@ -6,6 +6,8 @@ on:
         description: "移植包下载地址"
         required: true
         default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.10.0.UNPCNXM/miui_PERIDOT_OS1.0.10.0.UNPCNXM_91bb9533db_14.0.zip'
+      CUSTOM_VERSION:
+        description: "待打包版本号"
       VENDOR_URL:
         description: "底包下载地址"
         required: true
