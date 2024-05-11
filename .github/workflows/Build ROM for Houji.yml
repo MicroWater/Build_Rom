@@ -3,11 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       URL:
-        description: "移植包下载地址"
-        required: true
-        default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.11.0.UNPCNXM/miui_PERIDOT_OS1.0.11.0.UNPCNXM_b4df5675fc_14.0.zip'
-      VENDOR_URL:
-        description: "底包下载地址"
+        description: "包下载地址"
         required: true
         default: 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/OS1.0.36.0.UNCCNXM/miui_HOUJI_OS1.0.36.0.UNCCNXM_54ab2de231_14.0.zip'
 jobs:
@@ -30,7 +26,7 @@ jobs:
           token: ${{ secrets.PAT }}
       - name: 构建 ROM
         run: |
-          sudo bash "$GITHUB_WORKSPACE"/make.sh ${{ github.event.inputs.URL }} ${{ github.event.inputs.VENDOR_URL }} $GITHUB_ENV $GITHUB_WORKSPACE ${{ github.event.inputs.IMAGE_TYPE }} ${{ github.event.inputs.EXT_RW }}
+          sudo bash "$GITHUB_WORKSPACE"/make.sh ${{ github.event.inputs.URL }} $GITHUB_ENV $GITHUB_WORKSPACE
       - name: 处理 ROM
         run: |
           mkdir -p "$GITHUB_WORKSPACE"/GithubRelease
